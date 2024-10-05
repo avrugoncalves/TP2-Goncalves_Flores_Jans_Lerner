@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat", system-ui;
+    box-sizing: border-box;
 }
 
 #header{
@@ -86,9 +87,10 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    height: 500px;
+    height: auto;
     margin-left: 5%;
     margin-top: 5%;
+    margin-bottom: 8%;
 }
 
 #cont-main__parrafo{
