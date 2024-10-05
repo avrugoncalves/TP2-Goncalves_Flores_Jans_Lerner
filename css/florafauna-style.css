@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+    height: 100%;
+}
+
 #header{
     background-image: url(../assets/imagenes/fauna-banner.jpg);
     position: relative;
@@ -110,4 +115,89 @@
 p{
     font-size: 22px;
     text-align: justify;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+    'animal1 animal2 animal3 animal4'
+    'ave1 ave2 ave3 ave4';
+    gap: 0; 
+    width: 100%;
+    margin: 0 auto;
+}
+
+#cont-grid__img1{
+    grid-area: animal1;
+}
+
+#cont-grid__img2{
+    grid-area: animal2;
+}
+
+#cont-grid__img3{
+    grid-area: animal3;
+}
+
+#cont-grid__img4{
+    grid-area: animal4;
+}
+
+#cont-grid__img5{
+    grid-area: ave1;
+}
+
+#cont-grid__img6{
+    grid-area: ave2;
+}
+
+#cont-grid__img7{
+    grid-area: ave3;
+}
+
+#cont-grid__img8{
+    grid-area: ave4;
+}
+
+.image-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image-container img{
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 10px;
+    text-align: center;
+    transform: translateY(100%); 
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img{
+    transform: scale(1.1);
+}
+
+.image-container:hover .info{
+    transform: translateY(0); 
+}
+
+h3{
+    margin-bottom: 5px;
+}
+
+.cont-info__parraf{
+    font-size: 18px;
 }
