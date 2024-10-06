@@ -87,19 +87,19 @@ img{
     font-size: 30px;
 }
 
-#cont-main__flexbox{
+.cont-main__flexbox{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 100%;
+    width: 95%;
     height: auto;
     margin-left: 5%;
     margin-top: 5%;
     margin-bottom: 8%;
 }
 
-#cont-main__parrafo{
+.cont-main__parrafo{
     background-color: #829453;
     width: 70%;
     height: auto;
@@ -108,7 +108,7 @@ img{
     padding: 0.5%;
     margin-top: 0.7%;
 }
-#cont-main__parrafo:hover{
+.cont-main__parrafo:hover{
     transition: background-color 1.5s ease;
     background-color: #9D8044;
 }
@@ -129,7 +129,7 @@ p{
     width: 100%;
     margin: 0 auto;
     height: 800px;
-    margin-bottom: 15%;
+    margin-bottom: 7%;
 }
 
 #cont-grid__img1{
@@ -216,7 +216,7 @@ h3{
     width: 100%;
     margin: 0 auto;
     height: 800px;
-    margin-bottom: 15%;
+    margin-bottom: 8%;
 }
 
 #cont-grid__imgA{
