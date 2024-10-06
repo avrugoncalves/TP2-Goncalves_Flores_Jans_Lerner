@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", system-ui;
+    box-sizing: border-box;
 }
 
 img{
@@ -9,7 +11,7 @@ img{
 }
 
 #header{
-    background-image: url(../assets/imagenes/Relieves\ Los\ Arrayanes.webp);
+    background-image: url(../assets/imagenes/banner\ relieves.webp);
     position: relative;
     background-size: cover;
     background-position: center;
@@ -84,6 +86,94 @@ img{
     font-size: 30px;
 }
 
+#cont-main__flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    margin-top: 7%;
+    margin-bottom: 10%;
+}
+
+#cont-main__parrafo{
+    background-color: #829453;
+    width: 70%;
+    height: auto;
+    border-radius: 10px;
+    transition: background-color 1.5s ease;
+    padding: 0.5%;
+    margin-top: 0.7%;
+}
+#cont-main__parrafo:hover{
+    transition: background-color 1.5s ease;
+    background-color: #9D8044;
+}
+
+p{
+    font-size: 22px;
+    text-align: justify;
+}
+
+.cont-textocarrusel__flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10%;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.texto{
+    width: 40%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 3%;
+    background-color: #829453;
+    border-radius: 3%;
+    padding: 1.2%;
+    transition: background-color 1.5s ease;
+    max-height: 100%;
+}
+.texto:hover{
+    transition: background-color 1.5s ease;
+    background-color: #9D8044;
+}
+
+.carrusel{
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin-left: 3%;
+    margin-right: 5%;
+    border-radius: 3%;
+}   
+.carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 200%;
+
+    animation: carrusel 8s infinite ease-in-out;
+}
+.carrusel li{
+    list-style: none;
+    width: 100%;
+}
+
+@keyframes carrusel{
+   0% {margin-left: 0%;}
+   45% {margin-left: 0%;}
+
+   50% {margin-left: -100%;}
+   95% {margin-left: -100%;}
+}
+
+
 #pie{
     margin-top: 5%;
     padding-top: 2%;
@@ -95,7 +185,6 @@ img{
     justify-content: space-between;
     align-items: center;
 }
-
 #menu-pie{
     display: ruby;
     flex-direction: row;
@@ -130,7 +219,6 @@ img{
     margin: 10px 5px;
     flex-wrap: wrap;
 }
-
 .elemen-icono{
     list-style: none;
 }
@@ -142,7 +230,6 @@ img{
     margin: 0 20px;
     transition: color 1s, transform 1s;
 }
-
 .icono:hover{
     transform: translateY(-10px);
     color:  #ffffff;
