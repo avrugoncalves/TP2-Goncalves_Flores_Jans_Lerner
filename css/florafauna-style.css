@@ -323,3 +323,77 @@ h3{
     text-align: center;
     color: #829453;
 }
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+    #header{
+        height: 300px;
+    }
+    #cont-logo{
+        margin-top: 5%;
+        width: 40%;
+        height: auto;
+    }
+    .header-menu{
+        width: 100%;
+        margin-right: 3%;
+    }
+    .header-menu ul{
+        margin-top: 5%;
+    }
+    .header-menu li{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .header-menu a{
+        font-size: 10px;
+    }
+    #cont-header__titulo{
+        margin-top: 65%;    
+    }
+    .cont-grid__fauna{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        grid-template-areas: 
+        'animal1 animal2'
+        'animal3 animal4'
+        'ave1 ave2'
+        'ave3 ave4';
+    }
+    p{
+        font-size: 8px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .cont-info__parraf{
+        font-size: 8px;
+    }
+    h3{
+        font-size: 12px;
+    }
+    .cont-grid__flora{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;  
+        grid-template-areas: 
+        'arbol1 arbol2'
+        'arbol3 arbol4'
+        'arbol5 arbol6' 
+        'arbol7 arbol8';
+    }
+    #menu-pie{
+        display: inline-block;
+    }
+    .elem-pie{
+        margin-left: 5%;
+    }
+    .info-pie{
+        font-size: 22px;
+    }
+    .icono{
+        font-size: 28px;
+    }
+    #copyright{
+        font-size: 12px;
+    }
+}
