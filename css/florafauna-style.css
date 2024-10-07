@@ -325,8 +325,12 @@ h3{
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px){
+    img{
+        object-fit: cover;
+    }
     #header{
         height: 300px;
+        width: 100%;
     }
     #cont-logo{
         margin-top: 5%;
@@ -338,18 +342,20 @@ h3{
         margin-right: 3%;
     }
     .header-menu ul{
-        margin-top: 5%;
+        margin-top: 8%;
     }
     .header-menu li{
-        margin-left: 2%;
         margin-right: 2%;
     }
-    
     .header-menu a{
         font-size: 10px;
     }
     #cont-header__titulo{
-        margin-top: 65%;    
+        margin-top: 65%;  
+    }
+    .cont-main__parrafo{
+        width: 90%;
+        padding: 1%;
     }
     .cont-grid__fauna{
         grid-template-columns: 1fr 1fr;
@@ -361,13 +367,13 @@ h3{
         'ave3 ave4';
     }
     p{
-        font-size: 8px;
+        font-size: 10px;
     }
     h1{
         font-size: 20px;
     }
     .cont-info__parraf{
-        font-size: 8px;
+        font-size: 9px;
     }
     h3{
         font-size: 12px;
@@ -382,18 +388,14 @@ h3{
         'arbol7 arbol8';
     }
     #menu-pie{
+        margin-right: 15%;
         display: inline-block;
     }
-    .elem-pie{
-        margin-left: 5%;
-    }
     .info-pie{
-        font-size: 22px;
+        font-size: 15px;
+        margin: 10px 5px;
     }
     .icono{
-        font-size: 28px;
-    }
-    #copyright{
-        font-size: 12px;
+        font-size: 20px;
     }
 }
