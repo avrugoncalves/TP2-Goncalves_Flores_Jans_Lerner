@@ -25,7 +25,6 @@ body{
     background-position: center;
     width: 100%;
     height: 700px;
-    z-index: 1;
 }
 .cont-header__flexbox{
     display: flex;
@@ -36,7 +35,6 @@ body{
     width: 100%;
     height: 20%;
     transition: background-color 1.5s;
-    z-index: 1;
 }
 .cont-header__flexbox:hover{
     background-color: rgba(0, 0, 0, 0.651);
@@ -94,7 +92,6 @@ body{
     font-family: "Montserrat", system-ui;
     color: #F2F2F2;
     font-size: 30px;
-    z-index: 1;
 }
 
 .cont-main__flexbox{
@@ -107,7 +104,6 @@ body{
     margin-left: 5%;
     margin-top: 4%;
     margin-bottom: 6%;
-    z-index: 1;
 }
 
 .cont-main__titulo h2{
@@ -132,7 +128,6 @@ body{
 p{
     font-size: 20px;
     text-align: justify;
-    z-index: 1;
 }
 
 .cont-grid__fauna{
@@ -147,7 +142,6 @@ p{
     margin: 0 auto;
     height: 800px;
     margin-bottom: 7%;
-    z-index: 1;
 }
 
 #cont-grid__img1{
@@ -213,17 +207,14 @@ p{
     text-align: center;
     transform: translateY(100%); 
     transition: transform 0.3s ease;
-    z-index: 1;
 }
 
 h3{
     margin-bottom: 5px;
-    z-index: 1;
 }
 
 .cont-info__parraf{
     font-size: 18px;
-    z-index: 1;
 }
 
 .cont-grid__flora{
@@ -238,7 +229,6 @@ h3{
     margin: 0 auto;
     height: 800px;
     margin-bottom: 8%;
-    z-index: 1;
 }
 
 #cont-grid__imgA{
@@ -283,7 +273,6 @@ h3{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    z-index: 1;
 }
 
 #menu-pie{
@@ -295,12 +284,10 @@ h3{
     margin-top: 2%;
     margin-bottom: 3%;
     column-gap: 40%;
-    z-index: 1;
 }
 .elem-pie{
     margin-left: 50px;
     list-style: none;
-    z-index: 1;
 }
 
 .info-pie{
@@ -310,7 +297,6 @@ h3{
     text-decoration: none;
     margin: 5px 10px;
     transition: color 1s;
-    z-index: 1;
 }
 .info-pie:hover{
     color:  #ffffff;
@@ -322,7 +308,6 @@ h3{
     align-items: center;
     margin: 10px 5px;
     flex-wrap: wrap;
-    z-index: 1;
 }
 
 .elemen-icono{
@@ -335,7 +320,6 @@ h3{
     display: inline-block;
     margin: 0 20px;
     transition: color 1s, transform 1s;
-    z-index: 1;
 }
 
 .icono:hover{
@@ -350,7 +334,6 @@ h3{
     align-items: center;
     text-align: center;
     color: #829453;
-    z-index: 1;
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px){
