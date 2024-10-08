@@ -11,21 +11,11 @@ img{
 }
 
 body{
-    background-image: url('../assets/imagenes/huellas-fondo.png'); 
-    background-size: 300px 300px;
-    background-repeat: repeat;
-    background-position: bottom rights;
-    animation: moveDiagonal 90s linear infinite;
-    z-index: -1;
-}
-
-@keyframes moveDiagonal{
-    0% {
-      background-position: bottom right;
-    }
-    100% {
-      background-position: top left;
-    }
+    background-image: url('../assets/imagenes/fondobody-florafauna.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 #header{
