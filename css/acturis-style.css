@@ -125,6 +125,10 @@ img{
 }
 
 #cont-grid__texto1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     grid-area: texto1;
     width: 100%;
     height: 100%;
@@ -136,6 +140,10 @@ img{
 }
 
 #cont-grid__texto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     grid-area: texto2;
     width: 100%;
     height: 100%;
@@ -147,6 +155,10 @@ img{
 }
 
 #cont-grid__texto3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     grid-area: texto3;
     width: 100%;
     height: 100%;
@@ -284,4 +296,97 @@ p{
     align-items: center;
     text-align: center;
     color: #829453;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+    img{
+        object-fit: cover;
+    }
+    #header{
+        height: 300px;
+        width: 100%;
+    }
+    #cont-logo{
+        margin-top: 5%;
+        width: 40%;
+        height: auto;
+    }
+    .header-menu{
+        width: 100%;
+        margin-right: 3%;
+    }
+    .header-menu ul{
+        margin-top: 8%;
+    }
+    .header-menu li{
+        margin-right: 2%;
+    }
+    .header-menu a{
+        font-size: 10px;
+    }
+    #cont-header__titulo{
+        margin-top: 65%;  
+    }
+    #cont-main__parrafo{
+        width: 90%;
+        padding: 2%;
+    }
+    #cont-main__parrafo p{
+        font-size: 9px;
+    }
+
+    #cont-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'texto1' 
+        'carr1'
+        'texto2' 
+        'carr2'
+        'texto3' 
+        'carr3';
+        row-gap: 4%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    
+
+    .carrusel{
+        overflow: hidden;
+        border-radius: 3%;
+    }   
+    .carrusel ul{
+        display: flex;
+        padding: 0;
+        width: 200%;
+    
+        animation: carrusel 8s infinite ease-in-out;
+    }
+    .carrusel li{
+        list-style: none;
+        width: 100%;
+    }
+
+    p{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 14px;
+        margin-left: 5%;
+    }
+    h2{
+        font-size: 13px;
+    }
+    #menu-pie{
+        margin-right: 15%;
+        display: inline-block;
+    }
+    .info-pie{
+        font-size: 15px;
+        margin: 10px 5px;
+    }
+    .icono{
+        font-size: 20px;
+    }
 }
