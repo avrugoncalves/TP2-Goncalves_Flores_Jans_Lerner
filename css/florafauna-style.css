@@ -110,6 +110,11 @@ body{
     z-index: 1;
 }
 
+.cont-main__titulo h2{
+    color: #496337;
+    font-size: 29px;
+}
+
 .cont-main__parrafo{
     background-color: #829453;
     width: 70%;
@@ -121,7 +126,7 @@ body{
 }
 .cont-main__parrafo:hover{
     transition: background-color 1.5s ease;
-    background-color: #9D8044;
+    background-color: #496337;
 }
 
 p{
@@ -350,8 +355,7 @@ h3{
 
 @media screen and (max-width: 767px) and (min-width: 320px){
     body{
-        background-size: 150px 150px;
-        animation: moveDiagonal 120s linear infinite;
+        object-fit: cover;
     }
     img{
         object-fit: cover;
@@ -380,6 +384,9 @@ h3{
     }
     #cont-header__titulo{
         margin-top: 65%;  
+    }
+    .cont-main__titulo h2{
+        font-size: 20px;
     }
     .cont-main__parrafo{
         width: 90%;
