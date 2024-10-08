@@ -108,7 +108,7 @@ img{
 }
 #cont-main__parrafo:hover{
     transition: background-color 1.5s ease;
-    background-color: #9D8044;
+    background-color: #496337;
 }
 
 p{
@@ -176,7 +176,7 @@ p{
 }
 .texto:hover{
     transition: background-color 1.5s ease;
-    background-color: #9D8044;
+    background-color: #496337;
 }
 
 .carrusel{
