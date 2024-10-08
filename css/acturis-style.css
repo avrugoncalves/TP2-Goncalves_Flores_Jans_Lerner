@@ -8,6 +8,16 @@ img{
     width: 100%;
     height: 100%;
 }
+p{
+    color: beige;
+}
+body{
+    background-image: url('../assets/imagenes/fondobody-actturis.webp');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
 
 #header{
     background-image: url(../assets/imagenes/banner\ act\ turis.png);
@@ -16,6 +26,9 @@ img{
     background-position: center;
     width: 100%;
     height: 700px;
+}
+#headerbackground-image{
+    opacity: 0,5;
 }
 .cont-header__flexbox{
     display: flex;
@@ -95,7 +108,9 @@ img{
     margin-top: 7%;
     margin-bottom: 10%;
 }
-
+#cont-main__titulo{
+    color:black ;
+}
 #cont-main__parrafo{
     background-color: #829453;
     width: 70%;
@@ -107,7 +122,7 @@ img{
 }
 #cont-main__parrafo:hover{
     transition: background-color 1.5s ease;
-    background-color: #9D8044;
+    background-color: #496337;
 }
 
 #cont-grid{
@@ -185,18 +200,19 @@ p{
 .titulo{
     display: flex;
     justify-content: center;
-
+    color: beige;
+    margin-bottom: 2%;
 }
 .texto{
     background-color: #829453;
     border-radius: 3%;
-    padding: 1.2%;
+    padding: 2%;
     transition: background-color 1.5s ease;
     
 }
 .texto:hover{
     transition: background-color 1.5s ease;
-    background-color: #9D8044;
+    background-color: #496337;
 }
 
 .carrusel{
