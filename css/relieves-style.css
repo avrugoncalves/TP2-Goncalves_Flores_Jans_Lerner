@@ -79,7 +79,7 @@ img{
 }
 
 #cont-header__titulo{
-    margin-top: 30%;
+    margin-top: 24.5%;
     margin-left: 2%;
     font-family: "Montserrat", system-ui;
     color: #F2F2F2;
@@ -116,29 +116,63 @@ p{
     text-align: justify;
 }
 
-.cont-textocarrusel__flexbox{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10%;
+#cont-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-areas: 
+    'texto1 carr1'
+    'texto2 carr2'
+    'texto3 carr3';
+    column-gap: 5%;
+    row-gap: 8%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#cont-grid__texto1{
+    grid-area: texto1;
+    width: 100%;
+    height: 100%;
+}
+#cont-grid__carr1{
+    grid-area: carr1;
+    width: 100%;
+    height: 100%;
+}
+
+#cont-grid__texto2{
+    grid-area: texto2;
+    width: 100%;
+    height: 100%;
+}
+#cont-grid__carr2{
+    grid-area: carr2;
+    width: 100%;
+    height: 100%;
+}
+
+#cont-grid__texto3{
+    grid-area: texto3;
+    width: 100%;
+    height: 100%;
+}
+#cont-grid__carr3{
+    grid-area: carr3;
+    width: 100%;
+    height: 100%;
 }
 .titulo{
     display: flex;
     justify-content: center;
-    margin-bottom: 1%;
+
 }
 .texto{
-    width: 40%;
-    height: auto;
-    margin-left: 5%;
-    margin-right: 3%;
     background-color: #829453;
     border-radius: 3%;
     padding: 1.2%;
     transition: background-color 1.5s ease;
-    max-height: 100%;
+    
 }
 .texto:hover{
     transition: background-color 1.5s ease;
@@ -146,11 +180,7 @@ p{
 }
 
 .carrusel{
-    width: 50%;
-    height: auto;
     overflow: hidden;
-    margin-left: 3%;
-    margin-right: 5%;
     border-radius: 3%;
 }   
 .carrusel ul{
@@ -242,4 +272,95 @@ p{
     align-items: center;
     text-align: center;
     color: #829453;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+    img{
+        object-fit: cover;
+    }
+    #header{
+        height: 300px;
+        width: 100%;
+    }
+    #cont-logo{
+        margin-top: 5%;
+        width: 40%;
+        height: auto;
+    }
+    .header-menu{
+        width: 100%;
+        margin-right: 3%;
+    }
+    .header-menu ul{
+        margin-top: 8%;
+    }
+    .header-menu li{
+        margin-right: 2%;
+    }
+    .header-menu a{
+        font-size: 10px;
+    }
+    #cont-header__titulo{
+        margin-top: 65%;  
+    }
+    #cont-main__parrafo{
+        width: 80%;
+        padding: 1%;
+    }
+    #cont-main__parrafo p{
+        font-size: 9px;
+    }
+
+    #cont-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'texto1' 
+        'carr1'
+        'texto2' 
+        'carr2'
+        'texto3' 
+        'carr3';
+        row-gap: 8%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .carrusel{
+        overflow: hidden;
+        border-radius: 3%;
+    }   
+    .carrusel ul{
+        display: flex;
+        padding: 0;
+        width: 200%;
+    
+        animation: carrusel 8s infinite ease-in-out;
+    }
+    .carrusel li{
+        list-style: none;
+        width: 100%;
+    }
+
+    p{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 13px;
+    }
+    #menu-pie{
+        margin-right: 15%;
+        display: inline-block;
+    }
+    .info-pie{
+        font-size: 15px;
+        margin: 10px 5px;
+    }
+    .icono{
+        font-size: 20px;
+    }
 }
