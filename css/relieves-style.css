@@ -11,7 +11,7 @@ img{
 }
 
 #header{
-    background-image: url(../assets/imagenes/banner\ relieves.webp);
+    background-image: url(../assets/imagenes/banner\ relieves.jpg);
     position: relative;
     background-size: cover;
     background-position: center;
@@ -306,6 +306,7 @@ p{
     #cont-main__parrafo{
         width: 80%;
         padding: 1%;
+        margin-top: 3%;
     }
     #cont-main__parrafo p{
         font-size: 9px;
@@ -322,7 +323,7 @@ p{
         'carr2'
         'texto3' 
         'carr3';
-        row-gap: 8%;
+        row-gap: 4%;
         margin-right: 5%;
         margin-left: 5%;
     }
@@ -345,12 +346,13 @@ p{
 
     p{
         font-size: 10px;
+        padding: 1%;
     }
     h1{
         font-size: 14px;
     }
     h2{
-        font-size: 13px;
+        font-size: 12px;
     }
     #menu-pie{
         margin-right: 15%;
